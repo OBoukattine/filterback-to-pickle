@@ -14,7 +14,7 @@ You point the script to your folder with filterbanks files and the script will c
 ```
 python /path_to_script/fil_to_txtpickle.py --help
 ```
-### Process filterbank files in a single directory and createa a pickle log
+### Process filterbank files in a single directory and create a pickle log
 ```
 python3 /path_to_script/fil_to_txtpickle.py -i /folder_to_filterbank_files -o /desired_output_folder -p name_of_pkl_file
 ```
