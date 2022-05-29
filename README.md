@@ -1,4 +1,4 @@
-# filterback-to-pickle
+# filterbank-to-pickle
 Instead of relying on observing schedules you can use this script to create an accurate log of your observations based on your created filterbank files. 
 You point the script to your folder with filterbanks files and the script will create a pandas dataframe based on the output from Presto's readfile function. All outputted information from Presto's readfile is converted into a pandas .pkl file. Based on the MJD_start_time and observation length (Time_per_file), a MJD_stop_time is calculated using Astropy. Per filterbank a .txt file is saved and all observations are converted into a pickle file. For future reference, the complete filename including path is appended to the pandas dataframe. 
 
