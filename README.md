@@ -25,6 +25,7 @@ python3 /path_to_script/fil_to_txtpickle.py -i /parent_folder -o /desired_output
 
 ## Dependencies 
 * Readfile function from [Presto](https://github.com/scottransom/presto)
+* Python 3+
 * [Pandas](https://pandas.pydata.org/)
 * [Astropy](https://www.astropy.org/)
 * [tqdm](https://github.com/tqdm/tqdm)
