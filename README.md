@@ -8,6 +8,7 @@ You point the script to your folder with filterbanks files and the script will c
 - Recursivly search through folders for filterbank files (-r).
 - Use a keyword in order to constrain the processed filterbank files (-k).
 - Tar the final folder of files (-t).
+- Change the name of the telescope when parsing into pandas dataframe. Could be of use when your telescope name is FAKE in filterbank (-T or --telescope)
 
 ## Usage/Examples
 ### Help 
