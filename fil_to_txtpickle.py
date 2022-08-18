@@ -21,6 +21,8 @@ def options():
 
     general.add_argument('-t', '-tar-boolean', action='store_true',
                          help='Not-Required, option to tar the output files in the same folder. Default = False. The name of the tar-file is the name of the final output folder.')
+    general.add_argument('-T', '--telescope', type=str, required=False, help=
+'Not-Required, option to overwrite the telescope name when parsing into pickle file. Old telescope name will be stored in the .txt files. Option is mainly used when Telescope name is FAKE in filterbank.')
     general.add_argument('-test', action='store_true', help='Not-required, testing-modus. No command is given to system, but prints the commands that will be used.')
     
     return parser.parse_args()
@@ -138,6 +140,10 @@ def pickler(path_to_txt, output_name):
 
                     if what == "Telescope":
                         val = telescope_id
+
+                        #When arg Telescope is True, and the name of the telescope in de pd will be changed
+                        if args.telescope:
+                            val = args.telescope
 
                     what = what.replace(" ", "_")       
                     val = val.replace(" ", "_")
